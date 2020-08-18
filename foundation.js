@@ -15,3 +15,14 @@
     Number to String - Write a function that takes an array of numbers and replaces any negative values within the array with the string 'Dojo'. For example if array = [-1,-3,2], your function will return ['Dojo','Dojo',2].
 
 */
+
+
+//Get 1 to 255 - Write a function that returns an array with all the numbers from 1 to 255.
+
+var count255 = function(){
+    var out = [];
+    for(var i = 0; i <=254;i++){
+        out[i] = i+1;
+    }
+    return out;
+}
