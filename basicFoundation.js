@@ -98,8 +98,9 @@ var arrayEliminateNegativeValues = function (inputArray){
         if(inputArray[i]<0){
             inputArray[i] = 0;
         }
-        return inputArray;
+        
     }
+    return inputArray;
 }
 //Max/Min/Avg - Given an array with multiple values, write a function that returns a new array that only contains the maximum, minimum, and average values of the original array. (e.g. [1,5,10,-2] will return [10,-2,3.5])
 
@@ -120,19 +121,28 @@ var arrayEliminateNegativeValues = function (inputArray){
 var testArray = [23,52,4,3,13,5, -54, 210, -9, 0, -123432, -0];
 
 console.log(count255()); //valid
+testArray = [23,52,4,3,13,5, -54, 210, -9, 0, -123432, -0];
 
 console.log(sumEvenTo1000()); //250500
+testArray = [23,52,4,3,13,5, -54, 210, -9, 0, -123432, -0];
 
 console.log(sumOddTo5000());//6250000
+testArray = [23,52,4,3,13,5, -54, 210, -9, 0, -123432, -0];
 
 console.log(iterateAnArrayAndSum(testArray)); //100
+testArray = [23,52,4,3,13,5, -54, 210, -9, 0, -123432, -0];
 
 console.log(findMaxInArray(testArray));
+testArray = [23,52,4,3,13,5, -54, 210, -9, 0, -123432, -0];
 
 console.log(findAvgInArray(testArray));
+testArray = [23,52,4,3,13,5, -54, 210, -9, 0, -123432, -0];
 
 console.log(arrayOdd());
+testArray = [23,52,4,3,13,5, -54, 210, -9, 0, -123432, -0];
 
 console.log(arraySquares(testArray));
+testArray = [23,52,4,3,13,5, -54, 210, -9, 0, -123432, -0];
 
 console.log(arrayEliminateNegativeValues(testArray));
+testArray = [23,52,4,3,13,5, -54, 210, -9, 0, -123432, -0];
