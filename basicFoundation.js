@@ -103,7 +103,22 @@ var arrayEliminateNegativeValues = function (inputArray){
     return inputArray;
 }
 //Max/Min/Avg - Given an array with multiple values, write a function that returns a new array that only contains the maximum, minimum, and average values of the original array. (e.g. [1,5,10,-2] will return [10,-2,3.5])
+var findMaxMinAvg = function (inputArray){
+    var maxMinAvg = [0,0,0]
+    for(var i = 0; i < inputArray.length; i++){
+        maxMinAvg[2] +=inputArray[i];
 
+        if(maxMinAvg[0]< inputArray[i]){
+            maxMinAvg[0] = inputArray[i];
+        }
+        else if(maxMinAvg[1]> inputArray[i]){
+            maxMinAvg[1] = inputArray[i];
+        }
+
+    }
+    maxMinAvg[2] /= inputArray.length;
+    return maxMinAvg;
+}
 
 //Swap Values - Write a function that will swap the first and last values of any given array. The default minimum length of the array is 2. (e.g. [1,5,10,-2] will become [-2,5,10,1]).
 
@@ -145,4 +160,7 @@ console.log(arraySquares(testArray));
 testArray = [23,52,4,3,13,5, -54, 210, -9, 0, -123432, -0];
 
 console.log(arrayEliminateNegativeValues(testArray));
+testArray = [23,52,4,3,13,5, -54, 210, -9, 0, -123432, -0];
+
+console.log(findMaxMinAvg(testArray));
 testArray = [23,52,4,3,13,5, -54, 210, -9, 0, -123432, -0];
