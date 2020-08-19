@@ -93,8 +93,14 @@ var arraySquares = function (inputArray){
 }
 
 //Negatives - Given an array with multiple values, write a function that replaces any negative numbers within the array with the value of 0. When the program is done the array should contain no negative values. (e.g. [1,5,10,-2] will become [1,5,10,0])
-
-
+var arrayEliminateNegativeValues = function (inputArray){
+    for(var i = 0; i < inputArray.length; i++){
+        if(inputArray[i]<0){
+            inputArray[i] = 0;
+        }
+        return inputArray;
+    }
+}
 //Max/Min/Avg - Given an array with multiple values, write a function that returns a new array that only contains the maximum, minimum, and average values of the original array. (e.g. [1,5,10,-2] will return [10,-2,3.5])
 
 
@@ -111,7 +117,7 @@ var arraySquares = function (inputArray){
 --------------------TESTING-----------------------------
 --------------------------------------------------------
 */
-var testArray = [23,52,4,3,13,5];
+var testArray = [23,52,4,3,13,5, -54, 210, -9, 0, -123432, -0];
 
 console.log(count255()); //valid
 
@@ -128,3 +134,5 @@ console.log(findAvgInArray(testArray));
 console.log(arrayOdd());
 
 console.log(arraySquares(testArray));
+
+console.log(arrayEliminateNegativeValues(testArray))
