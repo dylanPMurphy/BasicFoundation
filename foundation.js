@@ -48,6 +48,15 @@ var sumOddTo5000 = function(){
     return sum;
 }
 
+
+//Iterate an array - Write a function that returns the sum of all the values within an array. (e.g. [1,2,5] returns 8. [-5,2,5,12] returns 14).
+var iterateAnArrayAndSum = function (inputArray){
+    var sum = 0;
+    for(var i = 0; i < inputArray.length; i++){
+        sum += inputArray[i];
+    }
+    return sum;
+}
 /*
 --------------------------------------------------------
 --------------------TESTING-----------------------------
@@ -55,4 +64,7 @@ var sumOddTo5000 = function(){
 */
 console.log(count255()); //valid
 console.log(sumEvenTo1000()); //250500
-console.log(sumOddTo5000());
+console.log(sumOddTo5000());//6250000
+
+var testArray = [23,52,4,3,13,5]
+console.log(iterateAnArrayAndSum(testArray)) //100
