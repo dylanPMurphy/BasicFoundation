@@ -130,7 +130,16 @@ var swapFirstLast = function(inputArray){
 }
 
 //Number to String - Write a function that takes an array of numbers and replaces any negative values within the array with the string 'Dojo'. For example if array = [-1,-3,2], your function will return ['Dojo','Dojo',2].
+var negativesToString = function(inputArray){
+    for(var i = 0; i < inputArray.length; i++){
+        if(inputArray[i]<0){
+            inputArray[i] = "Dojo";
+        }
+        
+    }
+    return inputArray;
 
+}
 
 
 
@@ -172,3 +181,6 @@ console.log(findMaxMinAvg(testArray));
 testArray = [23,52,4,3,13,5, -54, 210, -9, 0, -123432, -0];
 
 console.log(swapFirstLast(testArray));
+testArray = [23,52,4,3,13,5, -54, 210, -9, 0, -123432, -0];
+
+console.log(negativesToString(testArray));
