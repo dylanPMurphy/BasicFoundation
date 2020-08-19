@@ -66,5 +66,5 @@ console.log(count255()); //valid
 console.log(sumEvenTo1000()); //250500
 console.log(sumOddTo5000());//6250000
 
-var testArray = [23,52,4,3,13,5]
-console.log(iterateAnArrayAndSum(testArray)) //100
+var testArray = [23,52,4,3,13,5];
+console.log(iterateAnArrayAndSum(testArray)); //100
