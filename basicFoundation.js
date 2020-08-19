@@ -135,4 +135,4 @@ console.log(arrayOdd());
 
 console.log(arraySquares(testArray));
 
-console.log(arrayEliminateNegativeValues(testArray))
+console.log(arrayEliminateNegativeValues(testArray));
